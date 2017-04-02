@@ -1,0 +1,63 @@
+/*容器*/
+.poster-main{
+	width:1000px;
+	height: 300px;
+	position: relative;
+	margin:50px auto;
+}
+/*两侧按钮样式*/
+.poster-main .poster-btn{
+	width:100px;
+	height:300px;
+	position:absolute;
+}
+.poster-main .poster-btn:hover{
+	cursor: pointer;
+}
+/*ul样式*/
+.poster-main .poster-list{
+	position:absolute;
+	overflow: hidden;
+}
+/*左侧按钮样式*/
+.poster-main .poster-prev-btn{
+	left:0;
+	background:  url(../imgs/btn_l.png) no-repeat center center;
+}
+/*右侧按钮样式*/
+.poster-main .poster-next-btn{
+	right:0;
+	background:  url(../imgs/btn_r.png) no-repeat center center;
+}
+/*幻灯片样式*/
+.poster-main .poster-list{
+	width:100%;
+	height:100%;
+	position: absolute;
+	left:0;
+	list-style: none;
+	margin: 0;
+	padding:0;
+	z-index: 0;
+}
+.poster-main .poster-list li{
+	width:760px;
+	height:250px;
+	
+	/*水平居中*/
+	position: absolute;
+	/*left:50%;*/
+	/*margin-left:-380px;*/
+	/*垂直居中*/
+	/*top:50%;*/
+	/*margin-top:-125px;*/
+}
+/*消除a元素与img元素底部的像素差*/
+.poster-main .poster-list li a,img{
+	display: block;
+}
+/*图片样式*/
+.poster-main .poster-list li img{
+	width:100%;
+}
+
